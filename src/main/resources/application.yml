@@ -15,7 +15,7 @@ spring:
       max-file-size: 10Mb
       max-request-size: 100Mb
   datasource:
-    name: mysql_test
+    name: mybatis
     type: com.alibaba.druid.pool.DruidDataSource
     #druid相关配置
     druid:
@@ -43,7 +43,13 @@ spring:
       #打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
       pool-prepared-statements: false
       max-pool-prepared-statement-per-connection-size: 20
-
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: '.html'
+    mode: 'HTML5'
+    encoding: 'UTF-8'
+    servlet:
+      content-type: 'text/html'
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.lea.proj.model

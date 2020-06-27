@@ -70,7 +70,7 @@
                   selectByExampleQueryId="false">
            </table>-->
 
-        <table tableName="tb_settlement" domainObjectName="Settlement">
+        <table tableName="tb_users" domainObjectName="Users">
         </table>
     </context>
 </generatorConfiguration>
